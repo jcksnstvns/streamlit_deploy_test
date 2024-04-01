@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import altair as alt
 import seaborn as sns
+import time
 
 st.title("Palmer's Penguins")
 st.markdown('Use this Streamlit app to make your own scatterplot about penguins!')
