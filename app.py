@@ -4,11 +4,12 @@ import altair as alt
 import seaborn as sns
 
 st.title("Palmer's Penguins")
-st.markdown('Use this Streamlit app to make your own scatterplot about penguins!'
-)
+st.markdown('Use this Streamlit app to make your own scatterplot about penguins!')
 
 penguin_file = st.file_uploader(
     'Select Your Local Penguins CSV (default provided)')
+
+@st.cache_data() 
 def load_file(penguin_file):
     time.sleep(5)
     if penguin_file is not None:
